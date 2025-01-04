@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!-- Register Form Container -->
+    <main class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center mb-4">Register</h2>
+        <form id="register-form" class="space-y-4">
+            <!-- Name Input -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    class="mt-1 p-2 w-full border border-gray-300 rounded focus:ring focus:ring-blue-200 focus:outline-none"
+                    placeholder="Enter your full name" 
+                    required>
+            </div>
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="mt-1 p-2 w-full border border-gray-300 rounded focus:ring focus:ring-blue-200 focus:outline-none"
+                    placeholder="Enter your email" 
+                    required>
+            </div>
+            <!-- Password Input -->
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    class="mt-1 p-2 w-full border border-gray-300 rounded focus:ring focus:ring-blue-200 focus:outline-none"
+                    placeholder="Create a password" 
+                    required>
+            </div>
+            <!-- Confirm Password Input -->
+            <div>
+                <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                <input 
+                    type="password" 
+                    id="confirm-password" 
+                    class="mt-1 p-2 w-full border border-gray-300 rounded focus:ring focus:ring-blue-200 focus:outline-none"
+                    placeholder="Confirm your password" 
+                    required>
+            </div>
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-200">
+                Register
+            </button>
+        </form>
+
+        <!-- Links -->
+        <p class="text-center text-sm text-gray-600 mt-4">
+            Already have an account? 
+            <a href="login.html" class="text-blue-600 hover:underline">Login</a>
+        </p>
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="js/app.js"></script>
+    <script src="js/akun.js"></script>
+</body>
+</html>

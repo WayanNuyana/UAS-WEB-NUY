@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!-- Login Form Container -->
+    <main class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center mb-4">Login</h2>
+        <form id="login-form" class="space-y-4">
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    class="mt-1 p-2 w-full border border-gray-300 rounded focus:ring focus:ring-blue-200 focus:outline-none"
+                    placeholder="Enter your email" 
+                    required>
+            </div>
+            <!-- Password Input -->
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    class="mt-1 p-2 w-full border border-gray-300 rounded focus:ring focus:ring-blue-200 focus:outline-none"
+                    placeholder="Enter your password" 
+                    required>
+            </div>
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-200">
+                Login
+            </button>
+        </form>
+
+        <!-- Links -->
+        <p class="text-center text-sm text-gray-600 mt-4">
+            Don't have an account? 
+            <a href="register.html" class="text-blue-600 hover:underline">Register</a>
+        </p>
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="js/app.js"></script>
+    <script src="js/akun.js"></script>
+</body>
+</html>
